@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log('Nominatim API returned an error or no address found.');
           }
         })
-        .catch(err => console.error('Error calling Nominatim API:', err));
+        // .catch(err => console.error('Error calling Nominatim API:', err));
     }
 
     function error(err) {
