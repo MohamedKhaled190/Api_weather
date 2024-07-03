@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Weather App</title>
+</head>
+<body>
+<!-- start nav -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container py-4  px-md-5">
+      <div class="logo d-flex align-items-center">
+        <div class="logo-image mx-2">
+          <!-- <img src="https://routeweather.netlify.app/images/logo@2x.png" alt="" class="w-100"> -->
+        </div>
+        <div class="logo-disc mx-2 ">
+          <a class="navbar-brand fw-medium py-0 text-light" href="#">Weather</a>
+          <p class="m-0 fw-lighter fs-6 text-light">tagline goes here</p>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item mx-auto ">
+            <a class="nav-link active text-light mx-2 px-4 rounded-pill" aria-current="page" href="#">Weather</a>
+          </li>
+          <li class="nav-item  mx-auto">
+            <a class="nav-link text-light mx-2 px-4 rounded-pill" href="#">News</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+  <!-- start weatherEnterface-->
+  <section id="weatherEnterface" class="pb-5" >
+   <div class="container py-5  px-md-5">
+    <div class="searchBar position-relative">
+      <input id="SearchBareee" type="text" class="w-100 px-4 rounded-pill py-3" placeholder="Find your location">
+      <button class="btn btn-info rounded-pill px-4 position-absolute">Find</button>
+    </div>
+   </div>
+   <div class=" mt-5  container px-md-5">
+   <div class="row rounded-4  overflow-hidden ">
+    <div class="col-md-4 item p-0">
+      <div class="date d-flex justify-content-between align-items-center py-2 px-3 text-light">
+        <p id="currentDay" class="m-0"></p>
+        <p class="m-0"></p>
+      </div>
+      <div class="content px-3 py-4">
+        <h4 id="location"></h4>
+        <h1 id="tempreture-c"></h1>
+       <img src="" alt="">
+       <p class="blue fw-lighter" id="stute"></p>
+       <div class="stutsBar d-flex justify-content-between">
+        <div class="rain">
+          <i  class="fa-solid fa-umbrella"></i>
+          <span class="gray">20%</span>
+        </div>
+        <div class="winds">
+          <i class="fa-solid fa-wind"></i>
+          <span class="gray">20%</span>
+        </div>
+        <div class="direction">
+          <i class="fa-regular fa-compass"></i>
+          <span class="gray">20%</span>
+        </div>
+       </div>
+      </div>
+    
+    </div>
+    <div class="col-md-4 item2 p-0">
+      <div class="date text-center py-2 px-3 text-light">
+        <p class="m-0" id="nextdayname"></p>
+      </div>
+      <div class="content px-3 py-4 text-center">
+       <div class="weather my-4">
+        <img src="" alt="" id="nextdayICon">
+       </div>
+       <div class="tempreture">
+        <h3 class="text-light m-0" id="maxTemp"></h3>
+        <p class="fw-lighter" id="minTemp"></p>
+       </div>
+       <span class="fw-lighter blue" id="nextdayStute"></span>
+      </div>
+    
+    </div>
+    <div class="col-md-4 item p-0">
+      <div class="date text-center py-2 px-3 text-light">
+        <p class="m-0" id="DayThreeName"></p>
+
+      </div>
+      <div class="content px-3 py-4 text-center">
+       <div class="weather my-4">
+        <img src=""  alt="" id="Day3ICon">
+       </div>
+       <div class="tempreture">
+        <h3 class="text-light m-0 " id="maxTempDay3"></h3>
+        <p class=" fw-lighter " id="minTempDay3"></p>
+       </div>
+       <span class="fw-lighter blue" id="day3stute"></span>
+      </div>
+    
+    </div>
+
+   </div>
+
+
+  </div>
+  </section>
+    <!-- end weatherEnterface-->
+    <!-- start footer  -->
+    <footer class="py-5 ">
+      <div class="container px-md-5">
+        <div class="row">
+        <div class="col-md-8">
+          <div class="searchBar mb-3 position-relative">
+            <input type="text" class="w-100 px-4 rounded-pill py-3" placeholder="Find your location">
+            <button class="btn btn-info rounded-pill px-4 position-absolute">Find</button>
+          </div>
+        </div>
+        <div class="col-md-2 offset-md-1  " >
+        <div class="footerIcon d-flex justify-content-around w-100 align-items-start h-100">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <p class="mx-3 mt-4 fw-lighter">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer  -->
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

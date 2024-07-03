@@ -1,0 +1,100 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --mainColor: #1e202b;
+    --secoundColor:#009ad8;
+    --activeColor :#026992;
+    --ParaColor :#bfc1c8;
+    --white: #fff;
+    --enterface:#262e3d;
+}
+p, h4{
+    color: var(--ParaColor);
+}
+
+/* start nav */
+nav{
+    background-color:var(--mainColor) ;
+}
+.logo-image{
+    width: 70px;
+}
+.nav-link.active{
+  border: 2px solid var(--secoundColor);
+  background-color: var(--activeColor);
+}
+.nav-link{
+    border: 2px solid var(--mainColor);
+    transition: all 0.4s;
+}
+.nav-link:hover{
+    border: 2px solid var(--secoundColor);
+}
+
+/* end nav */
+/* start weather Enterface */
+#weatherEnterface{
+    /* height: 85vh; */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    background-color: var(--mainColor);
+    border-color: transparent;
+}
+input:focus{
+/* border-color: transparent;   */
+outline: none;
+caret-color: var(--secoundColor);
+}
+ button{
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+}
+#weatherEnterface .item{
+ background-color: var(--enterface);
+}
+#weatherEnterface .item2{
+    background-color: var(--mainColor);
+}
+#weatherEnterface  h1{
+    font-size: 6.4285714286rem;
+}
+#weatherEnterface .date{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#weatherEnterface h1{
+    color: var(--white);
+}
+#weatherEnterface .gray{
+    color: var(--ParaColor);
+}
+.blue{
+    color: var(--secoundColor);
+}
+#weatherEnterface i{
+    color: var(--ParaColor);
+}
+/* End weather Enterface */
+/* start footer */
+footer{
+    background-color: var(--enterface);
+}
+.footerIcon i{
+    background-color: var(--mainColor);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--secoundColor);
+    margin: 0px 5px;
+    transition: all 0.3s;
+}
+
+/* end footer */
